@@ -33,7 +33,7 @@ int main()
         input>>arr[i];
         cout<<arr[i]<<endl;
     }
-    int x=BinarySearch(3190);
+    int x=BinarySearch(319);
     output<<x;
     cout<<"Output Position "<<x<<endl;
     return 0;
