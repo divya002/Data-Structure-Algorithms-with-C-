@@ -28,7 +28,7 @@ int firstOccurLeft(int arr[], int n, int x)
             left = mid + 1;
         }
     }
-    return result+1;
+    return result;
 }
 int firstOccurRight(int arr[], int n, int x){
     int result = -1;
@@ -52,7 +52,7 @@ int firstOccurRight(int arr[], int n, int x){
             left = mid + 1;
         }
     }
-    return (n-result);
+    return result;
 }
 
 int main()
@@ -64,6 +64,7 @@ int main()
 
     cout<<"Result from left "<<result1<<endl;
     cout<<"Result from Right "<<result2<<endl;
- 
+    int total=(result2-result1)+1;
+    cout<<"TOTAL occurance "<<total<<endl;
     return 0;
 }
